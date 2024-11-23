@@ -1,0 +1,633 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+:root{
+
+  --background-color: rgb(53, 53, 53);
+  --secondary-color:rgb(240, 227, 158);
+
+  --title-font-weight:400;
+
+  --plate-color:rgb(53, 53, 53);
+
+  --card-border-radius:25px;
+  --card-color:rgb(218, 204, 139);
+  --card-titile-color:black;
+  --card-normal-text-bgcolor:rgb(53, 53, 53);
+
+  --main-button-color:rgb(53, 53, 53);
+  --main-button-hover:black;
+
+  --alert-button-color:rgb(53, 53, 53);
+  --alert-button-hover:black;
+  --alert-button-border-color:black;
+  --alert-bg-color:rgb(218, 204, 139);
+  --alert-border-color:black;
+
+
+    --font-family:'poppins';
+
+    --timing-for-buttons:300ms;
+    --navbar-width:250px;
+    --timing: 600ms;
+    --jump-height: 30px;
+
+    --dot-width: 25px;
+    --dot-height: 25px;
+    --dot-1-color: rgb(255, 240, 154);
+    --dot-2-color: rgb(255, 240, 154);
+    --dot-3-color: rgb(255, 240, 154);
+    --dot-4-color: rgb(255, 240, 154);
+
+    --alert-font-size1:25px;
+    --alert-font-color:rgb(34, 39, 63);
+
+    --input-width-mobile:200px;
+    --input-width-tablet:400px;
+    --input-width-pc:450px;
+
+    --input-height-mobile:20px;
+    --input-height-tablet:30px;
+    --input-height-pc:40px;
+
+    --input-width-mobile-select:100px;
+    --input-width-tablet-select:200px;
+    --input-width-pc-select:250px;
+
+    --input-height-mobile-select:auto;
+    --input-height-tablet-select:auto;
+    --input-height-pc-select:auto;
+
+    --input-margin-mobile:60px;
+    --input-margin-tablet:50px;
+    --input-margin-pc:40px;
+
+
+    --title-size-mobile:25px;
+    --title-size-tablet:35px;
+    --title-size-pc:45px;
+    
+    --label-text-size-mobile:12px;
+    --label-text-size-tablet:18px;
+    --label-text-size-pc:20px;
+
+    --input-text-size-mobile:10px;
+    --input-text-size-tablet:15px;
+    --input-text-size-pc:15px;
+}
+
+body::-webkit-scrollbar {
+  width: 0; /* This will hide the scrollbar */
+}
+/* Style for the vehicle card */
+body{
+  background-color: var(--background-color);   
+}
+
+body{
+display: flex;
+justify-content: center; 
+margin-left: var(--navbar-width); 
+
+}
+
+
+#pk {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#title4 {
+  margin-top: 10px;
+  text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  background-color: transparent;
+  top: 0;
+  position: fixed;
+}
+
+#title4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: 70px;
+  padding: 5px;
+  background-color: var(--background-color3);
+  width: calc(100vw - var(--navbar-width));
+  
+}
+
+
+#vehiclename{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0px;
+  font-size: var(--title-size-tablet);
+  font-family: var(--font-family);
+  color: var(--secondary-color);
+  pointer-events: none;
+  text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.vehicle-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  align-items: center;
+  gap: 12rem; 
+  margin-bottom: 8rem;
+  background-color: transparent;
+  margin-top: 0;
+  margin-top: 120px;
+}
+
+.cards {
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 680px;
+  width: 300px;
+  align-items: center;
+  background-color: var(--card-color);
+  border-radius: 25px;
+  margin-bottom: 100px;
+  padding-bottom: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+  margin-top: 0;
+}
+
+.cards::after {
+  content: '';
+  position: absolute;
+  bottom: -9rem; 
+  left: 0;
+  width: calc(100% - 0px); 
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px; 
+}
+
+
+
+
+#vehiclename {
+  display: flex;
+  align-items: center;
+  color: var(--card-titile-color);
+  font-size: var(--title-size-mobile);
+  pointer-events: none;
+  font-weight: 400;
+  background-color: transparent;
+  padding: 20px;
+}
+
+ 
+
+p{
+      display: flex;
+      text-align: left;
+      margin-left: 35px;
+      font-size: var(--label-text-size-pc);
+      font-family: var(--font-family);
+      color: #000000;
+      pointer-events: none;
+      font-weight: 500;
+}
+
+
+.plate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--label-text-size-pc);
+    font-family: var(--font-family);
+    color: #d6c474;
+    border: 0px solid #2196F3;
+    border-radius: 5px;
+    pointer-events: none;
+    padding: 5px;
+    background-color: var(--plate-color);
+}
+
+
+  /* zoom*/
+  .enlarged-image-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100svw;
+    height: 100svh;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  .enlarged-image-container {
+    max-width: 80%;
+    max-height: 80%;
+    position: relative;
+  }
+
+
+  .enlarged-image-container img {
+    width: 650px;
+    border-radius: 5px;
+    height: auto;
+    position: relative;
+  }
+  
+  .enlarged-image-container .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: rgb(253, 44, 44);
+    font-size: var(--title-size-tablet);
+    cursor: pointer;
+    z-index: 9999;
+  }
+  .enlarged-image-container .close{
+    transition: transform 0.2s, background-color 0.2s, color 0.2s; /* Add transition for smooth scaling and color change */
+  }
+  
+  .enlarged-image-container .close:active {
+    transform: scale(0.7); /* Scale down slightly when clicked */
+  }
+
+/*actual images*/
+.image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 00px;
+  background-color:var(--background-color);
+}
+
+.image-container img {
+  aspect-ratio: 16/10;
+  width: 150px;
+  height: auto;
+  margin: 0px;
+  border-radius: 0px;
+  border: 0px solid transparent;
+  transition: var(--timing-for-buttons);
+  cursor: zoom-in;
+}
+.image-container img{
+  transition: transform 0.2s, background-color 0.2s, color 0.2s; /* Add transition for smooth scaling and color change */
+}
+
+.image-container img:active {
+  transform: scale(0.7); /* Scale down slightly when clicked */
+}
+
+.buttons-container{
+  display: flex;
+  flex-direction: row;
+}
+
+ .edit-button,
+ .rent-button,
+ .remove-rent-button,
+ .extend-rent-button {
+  background-color: var(--main-button-color);
+  color: #fff;
+  font-size: var(--label-text-size-tablet);
+  font-family: 'poppins';
+  padding: 10px 20px;
+  margin: 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: var(--timing-for-buttons);
+  border: 1px solid transparent;
+}
+
+.edit-button,
+.rent-button,
+.remove-rent-button,
+.extend-rent-button{
+  transition: transform 0.2s, background-color 0.2s, color 0.2s; /* Add transition for smooth scaling and color change */
+}
+
+.edit-button:active,
+.rent-button:active,
+.remove-rent-button:active,
+.extend-rent-button:active {
+  transform: scale(0.7); /* Scale down slightly when clicked */
+}
+
+.edit-button:hover,
+.rent-button:hover,
+.remove-rent-button:hover,
+.extend-rent-button:hover {
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid white;
+  transition: var(--timing-for-buttons);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 767px){
+
+  #pk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #title4 {
+    margin-top: 10px;
+    text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    z-index: 10000022;
+    background-color: transparent;
+    top: 0;
+    position: fixed;
+    font-size:20px;
+  }
+
+
+  body{
+    display: flex;
+    justify-content: center; 
+    margin-left: 0; 
+   
+   }
+
+
+  * {
+    -webkit-tap-highretro-color: transparent;
+  }
+  
+  *:focus {
+    outline: none;
+  }
+
+
+  .alert1{
+    width: 70%;
+  }
+
+  #title4 {
+    margin-top: 10px;
+    text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    z-index: 1000001;
+    background-color: transparent;
+ }
+
+  .vehicle-container {
+    gap: 1rem; 
+    margin-bottom: 0;
+  }
+
+  .cards::after {
+    content: '';
+    position: absolute;
+    bottom: -8rem; 
+    left: 0;
+    width: calc(100% - 0px); 
+    height: 3px;
+    background-color: white;
+    border-radius: 15px; 
+  }
+ 
+  body h2 {
+      margin-bottom: 20px;
+      font-size: var(--title-size-mobile);
+  }
+
+  #vehiclename {
+      font-size: var(--title-size-mobile);
+  }
+
+  p {
+      margin-left: 10px;
+      font-size: var(--label-text-size-pc);
+      font-family: var(--font-family);
+  }
+  .label {
+      font-size: var(--label-text-size-pc);
+    }
+
+
+    .enlarged-image-container img {
+      width: 350px;
+      height: auto;
+      position: relative;
+    }
+    .vehicle-container {
+      gap: 10rem; 
+      margin-top: 120px;
+
+    }
+      
+  }
+      
+      
+      
+      
+      
+  @media (min-width: 768px) and (max-width: 1023px){
+
+    #pk {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    #title4 {
+      margin-top: 10px;
+      text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+      z-index: 10000022;
+      background-color: transparent;
+      top: 0;
+      position: fixed;
+    }
+    
+    body{
+      display: flex;
+      justify-content: center; 
+      margin-left: 0; 
+     
+     }
+
+    #maintitle {
+      margin-top: 100px;
+      margin-bottom: 20px;
+    }
+  
+  * {
+    -webkit-tap-highretro-color: transparent;
+  }
+  
+  *:focus {
+    outline: none;
+  }
+
+  body h2 {
+      margin-bottom: 0px;
+      font-size: var(--title-size-mobile);
+  }
+
+
+  #vehiclename {
+      font-size: var(--title-size-mobile);
+  }
+
+    .enlarged-image-container img {
+      width: 500px;
+      height: auto;
+      position: relative;
+    }
+    .vehicle-container {
+      margin-top: 120px;
+      gap: 12rem; 
+
+    }
+  }
+
+
+
+
+
+
+
+  .highlight{
+    color: var(--secondary-color);
+    padding: 5px;
+    width: auto;
+    background-color: var(--background-color);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bungee Hairline';
+    font-weight: bolder;
+    font-size: var(--label-text-size-mobile);
+  }
+
+
+
+
+
+
+
+.alert1-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+}
+
+.alert1 {
+  background-color: var(--alert-bg-color);
+  color: black;
+  font-size: var(--alert-font-size);
+  text-align:start;
+  padding: 20px;
+  border-radius: 25px;
+  border: 3px solid var(--alert-border-color);
+  z-index: 99999;
+}
+
+.alert1 button {
+    position: relative;
+    align-items: center;
+    justify-self: center;
+    background-color: var(--alert-button-color);
+    color: var(--secondary-color);
+    font-size: var(--alert-font-size) ;
+    border-radius: 5px 25px 5px 25px;
+    cursor: pointer;
+    transition: 0.2s;
+    width: 100px;
+    margin-right: 20px;
+    font-family: var(--font-family);
+    padding: 10px;
+    border:3px solid var(--alert-border-color);
+    margin-top: 25px;
+}
+
+
+.alert1 button:focus{
+    outline: gold;
+}
+
+.alert1 button{
+  transition: transform 0.2s, background-color 0.2s, color 0.2s; /* Add transition for smooth scaling and color change */
+}
+
+.alert1 button:active {
+  transform: scale(0.7); /* Scale down slightly when clicked */
+}
+
+
+.alert1 button:hover {
+  background-color: var(--alert-button-hover);
+  transition: var(--timing-for-buttons);
+  border:3px solid transparent;
+  color: white;
+}
+
+
+  /* Style for the input fields */
+.text-field1 {
+  margin-bottom: 1rem;
+}
+
+#rentername{
+  margin: 0;
+  color: #000000;
+}
+.text-field1 label {
+  position: relative;
+  left: 0;
+  display: block;
+  margin-bottom: 2rem;
+  width: 200px;
+  font-weight: 400;
+  background-color: transparent;
+  color: #000000;
+}
+
+
+.text-field1 input[type="date"] {
+  width: 80%;
+  padding: 0.5rem;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+#renttitle{
+  font-family: var(--font-family);
+  font-weight: 300;
+  color: #000000;
+  margin: 0;
+  font-size: var(--alert-font-size1);
+}
+
+

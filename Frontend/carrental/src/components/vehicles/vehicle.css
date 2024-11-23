@@ -1,0 +1,737 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+:root{
+  --background-color: rgb(53, 53, 53);
+  --background-color2: rgb(44, 44, 44);
+  --background-color3: rgb(34, 34, 34);
+  --background-color4: rgb(177, 177, 177);
+  --secondary-color:rgb(240, 227, 158);
+
+  --title-font-weight:400;
+
+  --plate-color:rgb(53, 53, 53);
+
+  --card-border-radius:25px;
+  --card-color:rgb(218, 204, 139);
+  --card-titile-color:black;
+  --card-normal-text-bgcolor:rgb(53, 53, 53);
+
+  --main-button-color:rgb(53, 53, 53);
+  --main-button-hover:black;
+
+  --page-button-color:rgb(34, 34, 34);
+
+  --alert-button-color:rgb(53, 53, 53);
+  --alert-button-hover:black;
+  --alert-button-border-color:black;
+  --alert-bg-color:rgb(218, 204, 139);
+  --alert-border-color:black;
+  
+  
+    --font-family:'poppins';
+    --navbar-width:250px;
+    --timing-for-buttons:300ms;
+
+    --timing: 600ms;
+    --jump-height: 30px;
+
+    --dot-width: 25px;
+    --dot-height: 25px;
+    --dot-1-color: rgb(255, 240, 154);
+    --dot-2-color: rgb(255, 240, 154);
+    --dot-3-color: rgb(255, 240, 154);
+    --dot-4-color: rgb(255, 240, 154);
+
+    --alert-font-size:15px;
+    --alert-font-color:rgb(34, 39, 63);
+
+    --input-width-mobile:200px;
+    --input-width-tablet:400px;
+    --input-width-pc:450px;
+
+    --input-height-mobile:20px;
+    --input-height-tablet:30px;
+    --input-height-pc:40px;
+
+    --input-width-mobile-select:100px;
+    --input-width-tablet-select:200px;
+    --input-width-pc-select:250px;
+
+    --input-height-mobile-select:auto;
+    --input-height-tablet-select:auto;
+    --input-height-pc-select:auto;
+
+    --input-margin-mobile:60px;
+    --input-margin-tablet:50px;
+    --input-margin-pc:40px;
+
+
+    --title-size-mobile:25px;
+    --title-size-tablet:35px;
+    --title-size-pc:45px;
+    
+    --label-text-size-mobile:12px;
+    --label-text-size-tablet:18px;
+    --label-text-size-pc:20px;
+
+    --input-text-size-mobile:10px;
+    --input-text-size-tablet:15px;
+    --input-text-size-pc:15px;
+}
+
+body::-webkit-scrollbar {
+  width: 0; /* This will hide the scrollbar */
+}
+/* Style for the vehicle card */
+body{
+    background-color: var(--background-color);   
+}
+
+body{
+  display: flex;
+  justify-content: center; 
+  margin-left: var(--navbar-width); 
+ 
+ }
+
+
+ #title3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: 70px;
+  padding: 5px;
+  background-color: var(--background-color3);
+  position: sticky;
+  top: 10px; /* Stick to the top of the viewport */
+  z-index: 1000;
+  width: calc(100vw - var(--navbar-width));
+}
+
+#title5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: 70px;
+  padding: 5px;
+  background-color: var(--background-color3);
+  position: sticky;
+  top: 0; /* Stick to the top of the viewport */
+  z-index: 1000;
+}
+
+#title5 {
+  margin-top: 10px;
+  text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  background-color: transparent;
+  top: 0;
+  position: fixed;
+}
+
+#title5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: 70px;
+  padding: 5px;
+  background-color: var(--background-color3);
+  width: calc(100vw - var(--navbar-width));
+  
+}
+
+
+
+body h2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  font-size: var(--title-size-tablet);
+  font-family: var(--font-family);
+  font-weight: var(--title-font-weight);
+  color: var(--secondary-color);
+  pointer-events: none;
+  text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.vehicle-container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  align-items: center;
+  gap: 12rem; 
+  margin-bottom: 8rem;
+  background-color: transparent;
+  margin-top: 120px;
+}
+
+.cards2{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 620px;
+  width: 300px;
+  align-items: center;
+  background-color: var(--card-color);
+  border-radius: var(--card-border-radius);
+  margin-bottom: 100px;
+  padding-bottom: 30px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+/*line that separates*/
+.cards2::after {
+  content: '';
+  position: absolute;
+  bottom: -9rem; 
+  left: 0;
+  width: calc(100% - 0px); 
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px; 
+}
+
+
+
+#vehiclename {
+  display: flex;
+  align-items: center;
+  color: var(--card-titile-color);
+  font-size: var(--title-size-mobile);
+  pointer-events: none;
+  font-weight: 400;
+  background-color: transparent;
+  padding: 20px;
+}
+
+ 
+
+p{
+      display: flex;
+      text-align: left;
+      margin-left: 35px;
+      font-size: var(--label-text-size-pc);
+      font-family: var(--font-family);
+      color: #000000;
+      pointer-events: none;
+      font-weight: 500;
+}
+
+
+.plate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--label-text-size-pc);
+    font-family: var(--font-family);
+    color: #d6c474;
+    border: 0px solid #2196F3;
+    border-radius: 5px;
+    pointer-events: none;
+    padding: 5px;
+    background-color: var(--plate-color);
+}
+
+
+  /* zoom*/
+  .enlarged-image-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100svw;
+    height: 100svh;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  .enlarged-image-container {
+    max-width: 80%;
+    max-height: 80%;
+    position: relative;
+  }
+
+
+  .enlarged-image-container img {
+    width: 650px;
+    border-radius: 5px;
+    height: auto;
+    position: relative;
+  }
+  
+  .enlarged-image-container .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: rgb(253, 44, 44);
+    font-size: var(--title-size-tablet);
+    cursor: pointer;
+    z-index: 9999;
+  }
+
+  .enlarged-image-container .close{
+    transition: transform 0.2s, background-color 0.2s, color 0.2s; /* Add transition for smooth scaling and color change */
+  }
+  
+  .enlarged-image-container .close:active {
+    transform:scale(0.7); /* Scale down slightly when clicked */
+  }
+
+
+/*actual images*/
+.image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 00px;
+  background-color:var(--background-color);
+}
+
+.image-container img {
+  aspect-ratio: 16/10;
+  width: 150px;
+  height: auto;
+  margin: 0px;
+  border-radius: 0px;
+  border: 0px solid transparent;
+  transition: var(--timing-for-buttons);
+  cursor: zoom-in;
+}
+.image-container img {
+  transition: transform 0.2s, background-color 0.2s, color 0.2s; /* Add transition for smooth scaling and color change */
+}
+
+.image-container img :active {
+  transform:scale(0.7); /* Scale down slightly when clicked */
+}
+
+
+
+ .edit-button,
+ .rent-button {
+  background-color: var(--main-button-color);
+  color: #fff;
+  font-size: var(--label-text-size-tablet);
+  font-family: 'poppins';
+  padding: 10px 20px;
+  margin: 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: var(--timing-for-buttons);
+  border: 1px solid transparent;
+}
+
+.edit-button,
+.rent-button {
+  transition: transform 0.2s, background-color 0.2s, color 0.2s; /* Add transition for smooth scaling and color change */
+}
+
+.edit-button:active,
+.rent-button :active {
+  transform:scale(0.7); /* Scale down slightly when clicked */
+}
+
+.edit-button:hover,
+.rent-button:hover {
+  background-color: var(--main-button-hover);
+  color: #ffffff;
+  border: 1px solid white;
+  transition: var(--timing-for-buttons);
+}
+
+
+
+
+
+
+.highlight-2-passengers {
+  color: var(--secondary-color);
+  width: 50px;
+  background-color: var(--card-normal-text-bgcolor);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Bungee Hairline';
+  font-weight: bolder;
+}
+
+.highlight-4-passengers {
+  color: var(--secondary-color);
+  width: 50px;
+  background-color: var(--card-normal-text-bgcolor);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Bungee Hairline';
+  font-weight: bolder;
+}
+
+.highlight-5-passengers {
+  color: var(--secondary-color);
+  width: 50px;
+  background-color: var(--card-normal-text-bgcolor);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Bungee Hairline';
+  font-weight: bolder;
+}
+
+
+
+
+
+.highlight-low-mileage {
+  color: var(--secondary-color); 
+  width: 120px;
+  background-color: var(--card-normal-text-bgcolor);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Bungee Hairline';
+  font-weight: bolder;
+}
+
+.highlight-medium-mileage {
+  color: var(--secondary-color); 
+  width: 120px;
+  background-color: var(--card-normal-text-bgcolor);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Bungee Hairline';
+  font-weight: bolder;
+}
+
+.highlight-high-mileage {
+  color: var(--secondary-color); 
+  width: 120px;
+  background-color: var(--card-normal-text-bgcolor);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Bungee Hairline';
+  font-weight: bolder;
+}
+
+
+.search-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  height: auto;
+}
+
+.checkbox-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 2rem;
+  font-size: var(--input-text-size-pc);
+}
+
+.checkmark-label1,
+.checkmark-label2,
+.checkmark-label3 {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  gap: 1rem;
+}
+
+#vehic{
+  font-family: var(--font-family);
+  color: var(--secondary-color);
+  font-size: var(--title-size-mobile);
+}
+
+.checkmark-input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 1; 
+}
+
+.checkmark-mark {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  background-color: var(--background-color3);
+  border-radius: 25px;
+  transition: 0.3s;
+  z-index: 0;
+}
+
+
+.checkmark-input:checked + .checkmark-mark:after {
+  content: ""; /* Empty content initially */
+  position: absolute;
+  display: block;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: transparent;
+  transition: 0.3s;
+  padding: 1px;
+  border: 2px solid var(--secondary-color);
+}
+
+.checkmark-label1 .checkmark-input:checked + .checkmark-mark:after {
+  content: "🚗"; /* Car emoji */
+}
+
+.checkmark-label2 .checkmark-input:checked + .checkmark-mark:after {
+  content: "🚐"; /* Van emoji */
+}
+
+.checkmark-label3 .checkmark-input:checked + .checkmark-mark:after {
+  content: "🚚"; /* Lorry emoji */
+}
+
+
+.checkmark-label-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+
+
+
+
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.pagination button {
+  background-color: var(--page-button-color);
+  border: none;
+  color: var(--secondary-color);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid transparent;
+}
+
+.pagination button:hover {
+  background-color: var(--main-button-hover);
+  border: 1px solid white;
+}
+
+
+.pagination button{
+  transition: transform 0.2s, background-color 0.2s, color 0.2s; /* Add transition for smooth scaling and color change */
+}
+
+.pagination button:active {
+  transform: scale(0.7); /* Scale down slightly when clicked */
+}
+
+
+
+
+
+.no-vehicles {
+  color: var(--secondary-color); 
+  font-size: var(--title-size-pc); 
+  font-weight: 600; 
+  text-align: center; 
+  margin-top:100px; 
+  font-family: var(--font-family);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 767px){
+  .no-vehicles {
+    font-size: var(--title-size-mobile); 
+  }
+
+  body{
+    display: flex;
+    justify-content: center; 
+    margin-left: 0; 
+   
+   }
+
+    * {
+      -webkit-tap-highretro-color: transparent;
+    }
+    
+    *:focus {
+      outline: none;
+    }
+    #title5 {
+      margin-top: 10px;
+      text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+      z-index: 1000001;
+      background-color: transparent;
+      font-size:20px;
+    }
+
+    .vehicle-container2 {
+      gap: 9rem; 
+      margin-top: 120px;
+    }
+   
+    body h2 {
+        margin-bottom: 20px;
+        font-size: var(--title-size-mobile);
+    }
+
+    #vehiclename {
+        font-size: var(--title-size-mobile);
+    }
+
+    p {
+        margin-left: 10px;
+        font-size: var(--label-text-size-pc);
+        font-family: var(--font-family);
+    }
+    .label {
+        font-size: var(--label-text-size-pc);
+      }
+
+
+      .enlarged-image-container img {
+        width: 350px;
+        height: auto;
+        position: relative;
+      }
+
+    .cards2::after {
+    content: '';
+    position: absolute;
+    bottom: -8rem; 
+    left: 0;
+    width: calc(100% - 0px); 
+    height: 3px;
+    background-color: white;
+    border-radius: 15px; 
+  }
+        
+    }
+        
+        
+        
+        
+        
+    @media (min-width: 768px) and (max-width: 1023px){
+
+      .no-vehicles {
+        font-size: var(--title-size-tablet); 
+      }
+
+      body{
+        display: flex;
+        justify-content: center; 
+        margin-left: 0; 
+       
+       }
+       #title5 {
+        margin-top: 10px;
+        text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+        z-index: 1000001;
+        background-color: transparent;
+        position: fixed;
+     }
+    
+    * {
+      -webkit-tap-highretro-color: transparent;
+    }
+
+    #title2{
+      margin-top: 100px;
+      margin-bottom: 20px;
+    }
+    
+    *:focus {
+      outline: none;
+    }
+
+    body h2 {
+        margin-bottom: 50px;
+        font-size: var(--title-size-mobile);
+    }
+
+    #vehiclename {
+        font-size: var(--title-size-mobile);
+    }
+
+      .enlarged-image-container img {
+        width: 500px;
+        height: auto;
+        position: relative;
+      }
+
+      .vehicle-container2 { 
+        margin-top: 120px;
+      }
+    }
+
+
+
+
+    .no-vehicles {
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      color: var(--secondary-color); 
+      font-weight: 600; 
+      text-align: center; 
+      margin-top:100px; 
+      font-family: var(--font-family);
+    }
+
+
+
+
