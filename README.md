@@ -22,6 +22,6 @@ Make sure you have the following installed:
 
 <div align="center">
     <a href="https://rental101.netlify.app/" target="_blank" rel="noopener noreferrer">
-         <img src="https://i.ibb.co/cJ8r9xX/image-34.png" alt="image-34" border="0">
+         <img src="https://i.ibb.co/cJ8r9xX/image-34.png" alt="Screenshot" border="0">
     </a>
 </div>
