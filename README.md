@@ -12,8 +12,6 @@ A fully functional rental management application built with React for the fronte
 - **User-Friendly Interface**: Easy-to-navigate UI for both renters and admins.
 - **Responsive Design**: The app is fully responsive and works across devices.
 
-## Installation
-
 ### Prerequisites
 
 Make sure you have the following installed:
@@ -22,8 +20,8 @@ Make sure you have the following installed:
 - **Java JDK 11 or higher** (https://adoptopenjdk.net/)
 - **Maven** (for building the Spring Boot backend)
 
-### Frontend Setup
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/rental-service-app.git
+<div align="center">
+    <a href="https://rental101.netlify.app/" target="_blank" rel="noopener noreferrer">
+         <img src="https://i.ibb.co/cJ8r9xX/image-34.png"/>
+    </a>
+</div>
