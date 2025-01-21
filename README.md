@@ -20,10 +20,40 @@ Make sure you have the following installed:
 - **Java JDK 11 or higher** (https://adoptopenjdk.net/)
 - **Maven** (for building the Spring Boot backend)
 
+
+<hr>
+<div align="center">
+  <h1>Login Page</h1>
+</div>
+<hr>
 <div align="center">
     <a href="https://rental101.netlify.app/" target="_blank" rel="noopener noreferrer">
-         <img src="https://i.ibb.co/cJ8r9xX/image-34.png" alt="Screenshot" border="0">
-        <img src="https://i.ibb.co/1bnYjZJ/a-cartoonish-illustration-of-a-banana-forest-with-j-UW8-IPm7-QJGr9-Z62wwb-E-A-Ni-DQD-n-HQBy-MWmn-APu.jpg" alt="a-cartoonish-illustration-of-a-banana-forest-with-j-UW8-IPm7-QJGr9-Z62wwb-E-A-Ni-DQD-n-HQBy-MWmn-APu" border="0">
+     <img src="https://i.ibb.co/MSJpF6d/Doctor-Reacts-To-Brutal-South-Park-Medical-Scenes-You-Tube-Google-Chrome-11-30-2024-2-26-16-AM.png" alt="Doctor-Reacts-To-Brutal-South-Park-Medical-Scenes-You-Tube-Google-Chrome-11-30-2024-2-26-16-AM" border="0">   
+    </a>
+</div>
+
+
+<hr>
+<div align="center">
+  <h1>Login Page</h1>
+</div>
+<hr>
+<div align="center">
+    <a href="https://rental101.netlify.app/" target="_blank" rel="noopener noreferrer">
+        
+    </a>
+</div>
+
+
+
+<hr>
+<div align="center">
+  <h1>Login Page</h1>
+</div>
+<hr>
+<div align="center">
+    <a href="https://rental101.netlify.app/" target="_blank" rel="noopener noreferrer">
+        
     </a>
 </div>
 
